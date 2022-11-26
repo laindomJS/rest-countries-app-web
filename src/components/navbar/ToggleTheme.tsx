@@ -8,13 +8,13 @@ export const ToggleTheme = (): JSX.Element => {
 		<Button
 			leftIcon={colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}
 			onClick={toggleColorMode}
-      variant="ghost"
-      fontSize={{ base:'16px', lg:'18px' }}
-      fontWeight="normal"
-      width={{base:'120px', lg:'160px'}}>
+			variant='ghost'
+			fontSize={{ base: '16px', lg: '18px' }}
+			fontWeight='normal'
+			width={{ base: '120px', lg: '160px' }}>
 
 			{colorMode === 'dark' ? 'Light Mode' : 'Dark Mode'}
-		
-    </Button>
+
+		</Button>
 	)
 }

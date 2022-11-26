@@ -1,4 +1,4 @@
-import { Box, Heading } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import { Navbar } from './components/navbar/Navbar';
 
 export const App = () => {
