@@ -9,7 +9,7 @@ export const Navbar = (): JSX.Element => {
 			as='nav'
 			w='100%'
 			h='2rem'
-			px={{ base: '1rem', lg: '4rem' }}
+			px={{ base: '1rem', lg: '3rem' }}
 			py='2.5rem'
 			alignItems='center'
 			justifyContent='space-between'

@@ -8,7 +8,7 @@ export const App = () => {
   const bg = useColorModeValue('light.very-light-gray', 'dark.very-dark-blue');
 
   return (
-    <Box as="main" w="100%" h="100vh" bgColor={bg}>
+    <Box as="main" w="100%" h="100%" bgColor={bg}>
       <Navbar />
         <CountryContextProvider>
           <Container />
