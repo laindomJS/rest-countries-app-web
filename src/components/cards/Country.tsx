@@ -7,20 +7,26 @@ import {
 	Text,
 	useColorModeValue,
 } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 
 export const Country = (country: CountryT) => {
 	const bg = useColorModeValue('white', 'dark.dark-blue');
 
 	return (
 		<GridItem
-			as='article'
+			as={motion.article}
+			initial={{ opacity: 0 }}
 			w='280px'
 			h='fit-content'
 			borderRadius='12px'
 			boxShadow='md'
 			mb='1.5rem'
-			bgColor={bg}> 
-
+			transition='.3s ease'
+			whileInView={{ opacity: 1 }}
+			viewport={{ once: true }}
+			cursor='pointer'
+			_hover={{ transform: 'scale(0.9)'}}
+			bgColor={bg}>
 			<Image
 				src={country.flags.png}
 				alt={country.name.common}
@@ -29,6 +35,7 @@ export const Country = (country: CountryT) => {
 				h='180px' />
 
 			<Box py='2rem' px='1.5rem' textAlign='left'>
+
 				<Heading as='h2' fontSize='23px'>
 					{country.name.common}
 				</Heading>

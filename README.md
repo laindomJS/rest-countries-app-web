@@ -1,7 +1,8 @@
-
 # REST Countries Web
 
 This project is about an application that shows data about the 250 countries of the world. The countries and their data come from the Countries REST API.
+
+
 ## Tech Stack
 
 - **Client:** React, TypeScript
@@ -16,7 +17,6 @@ This project is about an application that shows data about the 250 countries of 
 
 
 ## Appendix
-
 
 This project is a solution to a FrontEnd Mentor challenge
 

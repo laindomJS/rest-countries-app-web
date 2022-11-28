@@ -10,7 +10,7 @@ export const ListOfCards = () => {
 	return (
 		<>
 			{countries.length < 1 ? (
-				<Spinner colorScheme='facebook' mx='auto' mt='2rem' size='lg' />
+				<Spinner position="absolute" colorScheme='facebook' left="50%" top="10%" size='lg' />
 			) : (
 				countries.map((country) => <Country key={uuid()} {...country} />)
 			)}
