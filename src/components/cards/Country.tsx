@@ -27,6 +27,7 @@ export const Country = (country: CountryT) => {
 			cursor='pointer'
 			_hover={{ transform: 'scale(0.9)'}}
 			bgColor={bg}>
+				
 			<Image
 				src={country.flags.png}
 				alt={country.name.common}

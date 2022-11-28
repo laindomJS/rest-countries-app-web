@@ -6,7 +6,7 @@ export const GridContainer = (): JSX.Element => {
 		<Grid
 			w='100%'
 			h='100%'
-			templateColumns={{ base: 'repeat(1, 1fr)', lg: 'repeat(4, 1fr)' }}
+			templateColumns={{ base: 'repeat(1, 1fr)', md:'repeat(2, 1fr)', lg: 'repeat(4, 1fr)' }}
 			gap='15px'
 			position="relative">
 			<ListOfCards />

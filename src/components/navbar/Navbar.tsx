@@ -16,7 +16,7 @@ export const Navbar = (): JSX.Element => {
 			bgColor={bg}
 			boxShadow='md'>
 			
-      <Heading as='h1' fontSize={{ base: '16px', lg: '24px' }}>
+      <Heading as='h1' fontSize={{ base: '16px', lg: '20px' }} fontWeight="600">
 				Where in the World?
 			</Heading>
 
