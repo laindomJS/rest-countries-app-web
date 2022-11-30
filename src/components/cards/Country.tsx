@@ -23,7 +23,6 @@ export const Country = (country: CountryT) => {
 			mb='1.5rem'
 			transition='.3s ease'
 			whileInView={{ opacity: 1 }}
-			viewport={{ once: true }}
 			cursor='pointer'
 			_hover={{ transform: 'scale(0.9)'}}
 			bgColor={bg}>
