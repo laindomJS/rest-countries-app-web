@@ -5,14 +5,14 @@ import { Country } from './Country';
 import uuid from 'react-uuid';
 
 export const ListOfCards = () => {
-	const { countries, loading } = useContext(CountryCtx);
+	const { filteredCountries, loading } = useContext(CountryCtx);
 
 	return (
 		<>
 			{loading ? (
 				<Spinner position="absolute" colorScheme='facebook' left="50%" top="10%" size='lg' />
 			) : (
-				countries.map((country) => <Country key={uuid()} {...country} />)
+				filteredCountries.map((country) => <Country key={uuid()} {...country} />)
 			)}
 		</>
 	)

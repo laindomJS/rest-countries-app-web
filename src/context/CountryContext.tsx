@@ -4,8 +4,9 @@ import { CountryT } from '../types/Country';
 import { CountryContext, Props } from '../types/CountryContext';
 
 const defaultState = {
-	countries: [],
+	filteredCountries: [],
 	loading: true,
+	handleChangeName : () => {},
 }
 
 export const CountryCtx = createContext<CountryContext>(defaultState);
@@ -13,6 +14,7 @@ export const CountryCtx = createContext<CountryContext>(defaultState);
 export const CountryContextProvider: React.FC<Props> = ({ children }) => {
 	const [countries, setCountries] = useState<CountryT[]>([]);
 	const [loading, setLoading] = useState<boolean>(true);
+	const [countryName, setCountryName] = useState<string>('');
 
 	useEffect(() => {
 		getAllCountries()
@@ -23,8 +25,14 @@ export const CountryContextProvider: React.FC<Props> = ({ children }) => {
 			.catch((err) => console.error(err));
 	}, [])
 
+	const handleChangeName = (e:any) => {
+		setCountryName(e.target.value);
+	}
+
+	let filteredCountries:CountryT[] = countries.filter(country => country.name.common.toLowerCase().includes(countryName.toLocaleLowerCase()));
+
 	return (
-		<CountryCtx.Provider value={{ countries, loading }}>
+		<CountryCtx.Provider value={{ filteredCountries, loading, handleChangeName }}>
       {children}
     </CountryCtx.Provider>
 	)

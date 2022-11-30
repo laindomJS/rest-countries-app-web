@@ -1,8 +1,9 @@
 import { CountryT } from "./Country"
 
 export type CountryContext = {
-  countries: CountryT[],
+  filteredCountries: CountryT[],
   loading: boolean,
+  handleChangeName: any,
 }
 export type Props = {
   children: React.ReactNode;

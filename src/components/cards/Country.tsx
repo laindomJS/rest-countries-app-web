@@ -37,19 +37,19 @@ export const Country = (country: CountryT) => {
 
 			<Box py='2rem' px='1.5rem' textAlign='left'>
 
-				<Heading as='h2' fontSize='23px'>
+				<Heading as='h2' fontSize='20px'>
 					{country.name.common}
 				</Heading>
 
 				<Box mt='1rem'>
-					<Text fontSize='15px' mb='.2rem'>
-						Population: {country.population.toLocaleString()}
+					<Text fontSize='14px' mb='.2rem'>
+						<b>Population:</b> {country.population.toLocaleString()}
 					</Text>
-					<Text fontSize='15px' mb='.2rem'>
-						Region: {country.region}
+					<Text fontSize='14px' mb='.2rem'>
+						<b>Region:</b> {country.region}
 					</Text>
-					<Text fontSize='15px' mb='.2rem'>
-						Capital: {country.capital}
+					<Text fontSize='14px' mb='.2rem'>
+						<b>Capital:</b> {country.capital}
 					</Text>
 				</Box>
 
