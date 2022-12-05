@@ -14,6 +14,8 @@ export const RegionSelect = (): JSX.Element => {
 			_placeholder={{ color }}
 			bgColor={bg}
 			w='210px'
+			h='45px'
+			border='none'
       fontSize='14px'
 			boxShadow='md'
 			onChange={handleRegionName}

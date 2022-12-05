@@ -18,7 +18,7 @@ export const Country = (country: CountryT) => {
 			initial={{ opacity: 0 }}
 			w='280px'
 			h='fit-content'
-			borderRadius='12px'
+			borderRadius='6px'
 			boxShadow='md'
 			mb='1.5rem'
 			transition='.3s ease'
@@ -30,7 +30,7 @@ export const Country = (country: CountryT) => {
 			<Image
 				src={country.flags.png}
 				alt={country.name.common}
-				borderTopRadius='12px'
+				borderTopRadius='6px'
 				w='100%'
 				h='180px' />
 

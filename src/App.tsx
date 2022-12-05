@@ -1,8 +1,8 @@
 import { Box, useColorModeValue } from '@chakra-ui/react';
 import { Navbar } from './components/navbar/Navbar';
-import { Container } from './components/Container';
 import { CountryContextProvider } from './context/CountryContext';
 import { InputsContainer } from './components/inputs/InputsContainer';
+import { GridContainer } from './components/grid/GridContainer';
 
 export const App = () => {
 
@@ -13,7 +13,7 @@ export const App = () => {
       <Navbar />
         <CountryContextProvider>
           <InputsContainer />
-          <Container />
+          <GridContainer />
         </CountryContextProvider>
     </Box>
   )
