@@ -15,8 +15,12 @@ export const Navbar = (): JSX.Element => {
 			justifyContent='space-between'
 			bgColor={bg}
 			boxShadow='md'>
-			
-      <Heading as='h1' fontSize={{ base: '16px', lg: '20px' }} fontWeight="600">
+
+			<Heading
+				as='h1'
+				fontSize={{ base: '16px', lg: '20px' }}
+				fontWeight='600'
+				cursor='default'>
 				Where in the World?
 			</Heading>
 

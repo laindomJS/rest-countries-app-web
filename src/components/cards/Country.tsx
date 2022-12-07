@@ -48,7 +48,7 @@ export const Country = (country: CountryT) => {
 						<b>Region:</b> {country.region}
 					</Text>
 					<Text fontSize='14px' mb='.2rem'>
-						<b>Capital:</b> {country.capital}
+						<b>Capital:</b> {!country.capital ? 'This country not have a capital' : country.capital[0]}
 					</Text>
 				</Box>
 
