@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem, Heading, Text, useColorModeValue, Button } from '@chakra-ui/react';
+import { Box, Grid, GridItem, Heading, useColorModeValue, Button } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
 export const ErrorPage = (): JSX.Element => {
