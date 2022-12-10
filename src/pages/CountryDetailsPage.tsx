@@ -22,7 +22,7 @@ export const CountryDetailsPage = () => {
           </Button>
         </Link>
 
-        <Flex as="section" px="3rem" w="100%" h="90%" align="center" justify="between" experimental_spaceX="2rem">
+        <Flex as="section" px="3rem" w="100%" h="90%" align="center" experimental_spaceX="8rem">
           <Box w="40%">
             <Image src={country.flags.svg} alt={country.name.common} />
           </Box>
