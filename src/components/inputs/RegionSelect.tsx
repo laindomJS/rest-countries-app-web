@@ -19,7 +19,8 @@ export const RegionSelect = (): JSX.Element => {
       fontSize='14px'
 			boxShadow='md'
 			onChange={handleRegionName}
-			_hover={{ cursor: 'pointer' }}>
+			_hover={{ cursor: 'pointer' }}
+			ml={{ base:'0', lg:'0' }}>
 			<option value='africa'>Africa</option>
 			<option value='americas'>America</option>
 			<option value='asia'>Asia</option>

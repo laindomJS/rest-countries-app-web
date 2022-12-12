@@ -24,6 +24,7 @@ export const Country = (country: CountryT) => {
 				borderRadius='6px'
 				boxShadow='md'
 				mb='1.5rem'
+				mx={{ base:'auto', lg:'0' }}
 				transition='.3s ease'
 				whileInView={{ opacity: 1 }}
 				cursor='pointer'

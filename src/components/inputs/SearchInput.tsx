@@ -16,7 +16,7 @@ export const SearchInput = (): JSX.Element => {
   const color = useColorModeValue('light.dark-gray', 'light.very-light-gray');
 
 	return (
-		<InputGroup w='450px'>
+		<InputGroup w={{ base:'290px', lg:'450px' }}>
       
 			<InputLeftElement
 				pointerEvents='none'
@@ -30,8 +30,9 @@ export const SearchInput = (): JSX.Element => {
 				type='text'
 				placeholder='Search a Country...'
 				_placeholder={{ fontSize:'14px', fontWeight: 'bold', color: color }}
-        w='full'
+				w='full'
 				h='45px' 
+				mx={{ base:'auto', lg:'0' }}
         onChange={handleChangeName} />
 
 		</InputGroup>

@@ -7,9 +7,11 @@ export const InputsContainer = (): JSX.Element => {
 		<Flex
 			w='full'
 			my='3rem'
-			px={{ lg: '3rem' }}
-			alignItems='center'
-			justifyContent='space-between'>
+			px={{ base:'1.2rem', lg: '3rem' }}
+			alignItems={{base:'flex-start', lg:'center'}}
+			justifyContent='space-between'
+			flexDir={{ base:'column', lg:'row' }}
+			experimental_spaceY={{ base:'.6rem', lg:'0' }}>
 			<SearchInput />
 			<RegionSelect />
 		</Flex>

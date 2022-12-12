@@ -10,7 +10,7 @@ export const GridContainer = (): JSX.Element => {
 			h='100%'
 			px={{ base: '1rem', lg: '3rem' }}
 			templateColumns={{ base: 'repeat(1, 1fr)', md:'repeat(2, 1fr)', lg: 'repeat(4, 1fr)' }}
-			alignContent='center'
+			alignItems='center'
 			gap='15px'
 			position="relative">
 			<ListOfCards />
