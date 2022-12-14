@@ -5,16 +5,15 @@ import { InputsContainer } from '../components/inputs/InputsContainer';
 import { GridContainer } from '../components/grid/GridContainer';
 
 export const App = () => {
+	const bg = useColorModeValue('light.very-light-gray', 'dark.very-dark-blue');
 
-  const bg = useColorModeValue('light.very-light-gray', 'dark.very-dark-blue');
-
-  return (
-    <Box as="main" w="100%" h="100%" bgColor={bg}>
-      <Navbar />
-        <CountryContextProvider>
-          <InputsContainer />
-          <GridContainer />
-        </CountryContextProvider>
-    </Box>
-  )
+	return (
+		<Box as='main' w='100%' h='100%' bgColor={bg}>
+			<Navbar />
+			<CountryContextProvider>
+				<InputsContainer />
+				<GridContainer />
+			</CountryContextProvider>
+		</Box>
+	)
 }

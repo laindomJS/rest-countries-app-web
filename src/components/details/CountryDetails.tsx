@@ -11,9 +11,9 @@ export const CountryDetails = (country: CountryT): JSX.Element => {
   const bg = useColorModeValue('white', 'dark.dark-blue');
 
 	return (
-		<Box>
+		<Box as='article'>
 
-			<Grid templateColumns='repeat(2, 1fr)' alignContent='center'>
+			<Grid templateColumns={{base:'repeat(1, 1fr)', lg:'repeat(2, 1fr)'}} alignContent='center' mt={{base:'2rem', lg:'0'}}>
 				<GridItem>
 					<Heading fontSize='30px'>{country.name.common}</Heading>
 					<Box mt='.8rem'>
@@ -49,7 +49,7 @@ export const CountryDetails = (country: CountryT): JSX.Element => {
         <Text>
           <b>Border Countries:</b>
           {!country.borders ? (
-            'This country not have borders'
+            `${' '} This country not have borders`
           ) : (
             countryNames.map(c => (
               <Link to={`/country/${c.name.common}`} key={uuid()}>

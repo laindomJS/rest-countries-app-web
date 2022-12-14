@@ -10,9 +10,16 @@ export const ListOfCards = () => {
 	return (
 		<>
 			{loading ? (
-				<Spinner position="absolute" colorScheme='facebook' left="50%" top="10%" size='lg' />
+				<Spinner
+					position='absolute'
+					colorScheme='facebook'
+					left='50%'
+					top='10%'
+					size='lg' />
 			) : (
-				filteredCountries.map((country) => <Country key={uuid()} {...country} />)
+				filteredCountries.map((country) => (
+					<Country key={uuid()} {...country} />
+				))
 			)}
 		</>
 	)
